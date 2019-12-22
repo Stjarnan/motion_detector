@@ -1,0 +1,38 @@
+{
+	// indicate whether the picamera should be used
+	"picamera": true,
+
+	// background subtractor
+	// valid values are [CNT GMG MOG GSOC LSBP]
+	"bg_sub": "MOG",
+
+	// MxN-size and number of iterations of erode kernel
+	"erode": {"kernel": [3, 3], "iterations": 1},
+
+	// MxN-size and number of iterations of dilate kernel
+	"dilate": {"kernel": [5, 5], "iterations": 2},
+
+	// minimum pixels required for a valid foreground (motion) blob
+	"min_radius": 60,
+
+	// key clips before/affer buffer and codec
+	"keyclipwriter_buffersize": 50,
+	"codec": "MJPG",
+
+	// should snapshots be written, and if so, how many frames should
+	// there be between snapshots?
+	"write_snaps": true,
+	"frames_between_snaps": 30,
+
+	// should boxes and circles be annotated for display?
+	"annotate": true,
+
+	// should the video be shown on the screen?
+	"display": true,
+
+	// path to which output files will be written
+	"output_path": "output_mog",
+
+	// frames per second for output video
+	"fps": 20
+}

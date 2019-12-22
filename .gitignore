@@ -123,3 +123,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# stuffing
+output_gmg/
+output_mog/
+*.mp4
